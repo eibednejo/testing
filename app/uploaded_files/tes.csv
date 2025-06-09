@@ -1,0 +1,42 @@
+"Cost per conversation in IDR, effective June 1, 2023",,,,,,
+"Note: Authentication-International rate applies for Indonesia as of June 1, 2024 and India as of July 1, 2024. Learn more: https://developers.facebook.com/docs/whatsapp/pricing/authentication-international-rates.",,,,,,
+"Note: Utility rates below apply as of August 1, 2024.",,,,,,
+"Note: Marketing rates below apply as of October 1, 2024.",,,,,,
+"Note: Service conversations are free as of November 1, 2024. Learn more: https://developers.facebook.com/docs/whatsapp/pricing/updates-to-pricing#free-service-conversations.",,,,,,
+"Note: Utility rate below applies for Rest of Africa as of November 1, 2024.",,,,,,
+"Note: Authentication and authentication-international rates below apply for Egypt, Malaysia, Nigeria, Pakistan, Saudi Arabia, South Africa and the United Arab Emirates as of February 1, 2025.",,,,,,
+"Note: Authentication-international rates below apply for Egypt, Nigeria, Pakistan, and South Africa as of April 1, 2025.",,,,,,
+Market,Currency,Marketing,Utility,Authentication,"Authentication-
+International",Service
+Argentina,Rp,881.95,485.22,523.57,n/a,n/a
+Brazil,Rp,891.98,114.17,449.56,n/a,n/a
+Chile,Rp,1268.36,285.34,752.45,n/a,n/a
+Colombia,Rp,178.40,2.85,109.18,n/a,n/a
+Egypt,Rp,1531.53,74.22,74.22,928.22,n/a
+France,Rp,2044.30,428.27,986.75,n/a,n/a
+Germany,Rp,1948.66,785.17,1096.45,n/a,n/a
+India,Rp,152.77,19.97,19.97,399.44,n/a
+Indonesia,Rp,586.33,285.32,427.97,1940.13,n/a
+Israel,Rp,503.79,75.64,240.83,n/a,n/a
+Italy,Rp,985.56,427.89,539.13,n/a,n/a
+Malaysia,Rp,1227.49,199.82,199.82,596.63,n/a
+Mexico,Rp,621.91,142.64,341.48,n/a,n/a
+Netherlands,Rp,2279.80,713.78,1027.84,n/a,n/a
+Nigeria,Rp,737.05,95.70,95.70,1071.67,n/a
+Pakistan,Rp,675.37,77.10,77.10,1071.67,n/a
+Peru,Rp,1003.55,285.50,537.94,n/a,n/a
+Russia,Rp,1144.36,570.75,612.56,n/a,n/a
+Saudi Arabia,Rp,648.28,163.95,163.95,854.24,n/a
+South Africa,Rp,541.75,108.64,108.64,285.89,n/a
+Spain,Rp,877.11,285.24,487.76,n/a,n/a
+Turkey,Rp,155.56,75.64,118.81,n/a,n/a
+United Arab Emirates,Rp,548.42,224.11,224.11,727.12,n/a
+United Kingdom,Rp,754.51,313.93,511.14,n/a,n/a
+North America,Rp,356.60,57.06,192.56,n/a,n/a
+Rest of Africa,Rp,321.24,57.06,205.60,n/a,n/a
+Rest of Asia Pacific,Rp,1044.97,224.13,606.05,n/a,n/a
+Rest of Central & Eastern Europe,Rp,1226.72,503.52,794.66,n/a,n/a
+Rest of Latin America,Rp,1055.54,161.18,634.44,n/a,n/a
+Rest of Middle East,Rp,486.68,224.07,253.74,n/a,n/a
+Rest of Western Europe,Rp,844.68,428.04,539.34,n/a,n/a
+Other,Rp,861.62,109.84,434.08,n/a,n/a
