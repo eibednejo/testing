@@ -5,3 +5,4 @@ assets/external/
 .states
 *.db
 *.env
+app/app/states/*.env

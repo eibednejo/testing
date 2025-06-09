@@ -1,5 +1,5 @@
 import reflex as rx
-from app.components.typing_indicator import typing_indicator
+from .typing_indicator import typing_indicator
 
 
 def ai_bubble(
@@ -62,7 +62,7 @@ def user_bubble(message: str) -> rx.Component:
 def message_bubble(
     message: dict, index: int
 ) -> rx.Component:
-    from app.states.chat_state import ChatState
+    from ..states.chat_state import ChatState
 
     is_last = index == ChatState.messages.length() - 1
     return rx.el.div(

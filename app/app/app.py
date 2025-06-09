@@ -1,8 +1,8 @@
 import reflex as rx
-from app.components.sidebar import sidebar
-from app.components.chat_interface import chat_interface
-from app.pages.login import login
-from app.states.auth_state import AuthState
+from .components.sidebar import sidebar
+from .components.chat_interface import chat_interface
+from .pages.login import login
+from .states.auth_state import AuthState
 
 
 def index() -> rx.Component:

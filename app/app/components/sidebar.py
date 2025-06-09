@@ -1,7 +1,7 @@
 import reflex as rx
-from app.states.chat_state import ChatState
-from app.states.file_state import FileState
-from app.states.auth_state import AuthState
+from ..states.chat_state import ChatState
+from ..states.file_state import FileState
+from ..states.auth_state import AuthState
 
 
 def file_upload_section() -> rx.Component:

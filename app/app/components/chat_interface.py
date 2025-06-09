@@ -1,8 +1,8 @@
 import reflex as rx
-from app.states.chat_state import ChatState
-from app.components.message_bubble import message_bubble
-from app.components.preset_cards import preset_cards
-from app.components.input_area import chat_footer, chat_header
+from ..states.chat_state import ChatState
+from .message_bubble import message_bubble
+from .preset_cards import preset_cards
+from .input_area import chat_footer, chat_header
 
 def chat_interface() -> rx.Component:
     return rx.el.div(

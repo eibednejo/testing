@@ -4,7 +4,7 @@ from app.states.auth_state import AuthState
 class MainPage(rx.Component):
     def render(self):
         auth = rx.use_state(AuthState)
-        return rx.box()(
+        return rx.box(
             rx.heading("Welcome to the Main Page!"),
             rx.text(f"Logged in as: {auth.session_email or 'Guest'}"),
             rx.cond(

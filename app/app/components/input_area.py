@@ -1,5 +1,5 @@
 import reflex as rx
-from app.states.chat_state import ChatState
+from ..states.chat_state import ChatState
 
 
 def input_area() -> rx.Component:

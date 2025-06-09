@@ -30,15 +30,22 @@ class ChatState(rx.State):
     # Simulated typing speed
     SIMULATED_TYPING_SPEED_CPS: float = 300.0  # Characters per second (adjust for desired speed)
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        if not self.conversations:
-            self._create_and_select_new_chat("Intros")
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     if not self.conversations:
+    #         self._create_and_select_new_chat("Intros")
 
     def _generate_chat_id(self) -> str:
         return f"{time.time()}-{uuid.uuid4()}"
 
     def _create_and_select_new_chat(self, title: str) -> str:
+        import traceback
+        print("=== DEBUG: _create_and_select_new_chat called ===")
+        print(f"Title: {title}")
+        print("Stack trace:")
+        traceback.print_stack()
+        print("=== End stack trace ===")
+        
         new_id = self._generate_chat_id()
         self.conversations[new_id] = {"id": new_id, "title": title, "messages": []}
         self.current_chat_id = new_id
@@ -69,9 +76,9 @@ class ChatState(rx.State):
     def _ensure_chat_exists_and_is_selected(self):
         if not self.current_chat_id or self.current_chat_id not in self.conversations:
             if self.conversations:
-                self.current_chat_id = self.sorted_chat_titles[0]["id"] if self.sorted_chat_titles else self._create_and_select_new_chat("Chat 1")
+                self.current_chat_id = self.sorted_chat_titles[0]["id"] if self.sorted_chat_titles else self._create_and_select_new_chat("Intros")
             else:
-                self._create_and_select_new_chat("Intros")
+                self._create_and_select_new_chat("Intros")  # This will only run when actually needed
 
     @rx.event
     def select_chat(self, chat_id: str):
@@ -236,3 +243,9 @@ class ChatState(rx.State):
             self.current_chat_id = ""
             self.editing_chat_id = ""
             self.is_typing = False
+    
+    @rx.var
+    def display_messages(self) -> List[Message]:
+        # if not self.conversations:
+        #     self._ensure_chat_exists_and_is_selected()  # Only create when UI needs it
+        return self.messages

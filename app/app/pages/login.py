@@ -1,5 +1,5 @@
 import reflex as rx
-from app.states.auth_state import AuthState
+from ..states.auth_state import AuthState
 
 
 def login_form() -> rx.Component:
